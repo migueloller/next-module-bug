@@ -1,0 +1,10 @@
+{
+  "name": "module-lib",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.cjs",
+  "module": "index.es",
+  "peerDependencies": {
+    "exports-lib": "0.1.0"
+  }
+}
