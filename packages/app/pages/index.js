@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import moduleLib from 'module-lib'
-import exportsLib from 'exports-lib'
+import { check, moduleType as moduleLibType } from 'module-lib'
+import { moduleType as exportsLibType } from 'exports-lib'
 import styles from '../styles/Home.module.css'
 
 export function getServerSideProps() {
+  check(exportsLibType)
+
   return { props: { moduleLib, exportsLib } }
 }
 
